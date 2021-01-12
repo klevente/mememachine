@@ -59,14 +59,7 @@ fun main(args: Array<String>) {
                     manager.handleVoiceUpdate(it)
                 }
         }
-        val disconnect = mono {
-            gateway.onDisconnect()
-                .asFlow()
-                .collect {
-                    println("disconnect")
-                }
-        }
-        return@withGateway Mono.`when`(message, voiceUpdate, disconnect)
+        return@withGateway Mono.`when`(message, voiceUpdate)
     }.block()
 
     exitProcess(0)
