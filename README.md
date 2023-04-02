@@ -2,6 +2,8 @@
 
 **mememachine** is a simple Discord bot that plays custom-supplied sounds in a voice chat.
 
+Note: This repository is no longer maintained and does not work in its current form. I created a new version in Rust, which you can find here: https://github.com/klevente/mememachine-rs.
+
 ## Installation
 
 Getting **mememachine** up and running is very easy:
